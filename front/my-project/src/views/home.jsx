@@ -1,4 +1,4 @@
-import {Navigate } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 const Home = () => {
     return (
         <div className="hero min-h-screen bg-base-200">
@@ -6,7 +6,7 @@ const Home = () => {
                 <div className="max-w-md">
                     <h1 className="text-5xl font-bold">¿Qué esperas?</h1>
                     <p className="py-6">Ponte al día con los deberes</p>
-                    <button className="btn btn-primary">Get Started</button>
+                    <Link to="/homeproyectos" className="btn btn-primary">Get Started</Link>
                 </div>
             </div>
         </div>
