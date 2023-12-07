@@ -13,7 +13,7 @@ const HomeProyectos = () => {
                 pruebas: 
                     [
                         {
-                            id:"1",
+                            id_prueba:"1",
                             titulo: "Prueba 1",
                             tipo_prueba: "Prueba de caja negra",
                             descripcion: "Esta es la prueba 1",
@@ -31,7 +31,7 @@ const HomeProyectos = () => {
 
                         },
                         {
-                            id:"2",
+                            id_prueba:"2",
                             titulo: "Prueba 2",
                             tipo_prueba: "Prueba de caja negra",
                             descripcion: "Esta es la prueba 2",
@@ -48,7 +48,7 @@ const HomeProyectos = () => {
                             informe: "en proceso"
                         },
                         {
-                            id:"3",
+                            id_prueba:"3",
                             titulo: "Prueba 3",
                             tipo_prueba: "Prueba de caja negra",
                             descripcion: "Esta es la prueba 3",
@@ -74,7 +74,7 @@ const HomeProyectos = () => {
                 pruebas: 
                     [
                         {
-                            id:"1",
+                            id_prueba:"1",
                             titulo: "Prueba 1",
                             tipo_prueba: "Prueba de caja negra",
                             descripcion: "Esta es la prueba 1",
@@ -92,7 +92,7 @@ const HomeProyectos = () => {
 
                         },
                         {
-                            id:"2",
+                            id_prueba:"2",
                             titulo: "Prueba 2",
                             tipo_prueba: "Prueba de caja negra",
                             descripcion: "Esta es la prueba 2",
@@ -109,7 +109,7 @@ const HomeProyectos = () => {
                             informe: "en proceso"
                         },
                         {
-                            id:"3",
+                            id_prueba:"3",
                             titulo: "Prueba 3",
                             tipo_prueba: "Prueba de caja negra",
                             descripcion: "Esta es la prueba 3",

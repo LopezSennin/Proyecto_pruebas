@@ -1,19 +1,22 @@
 
 
-export const PruebaProyecto = ({props}) => {
-    const {titulo, id_responsable, prioridad, fecha_limete, resultados} = props.prueba
-    const responsable = id_responsable /// Aqui se debe hacer una consulta a la base de datos para obtener el nombre del responsable
+export const PruebaProyecto = (props) => {
+    const id_prueba = props.id_prueba;
+    const id_proyecto = props.id_proyecto;
+    const responsable = props.id_responsable /// Aqui se debe hacer una consulta a la base de datos para obtener el nombre del responsable
     return (
         <div className="collapse bg-base-200">
             <input type="checkbox" /> 
             <div className="collapse-title text-xl font-medium">
-                {titulo}
+                {props.titulo}
             </div>
             <div className="collapse-content grid gap-x-8 gap-y-4 grid-cols-2"> 
+                <p>Id de la prueba: {id_prueba}</p>
                 <p>Nombre de responsable: {responsable}</p>
-                <p>Nivel de prioridad: {prioridad}</p>
-                <p>Fecha limite de entrega: {fecha_limete}</p>
-                <p>Resultado de la prueba: {resultados} </p>
+                <p>Nivel de prioridad: {props.prioridad}</p>
+                <p>Fecha de inicio: {props.fecha_inicio}</p>
+                <p>Fecha limite de entrega: {props.fecha_limete}</p>
+                <p>Resultado de la prueba: {props.resultados} </p>
                 <button className="btn btn-outline col-span-2">Detalle</button>
             </div>
         </div>
