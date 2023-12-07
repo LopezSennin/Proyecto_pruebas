@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import HomeLogin from './views/homeLogin'
 import NavBar from './components/NavBar'
 import Home from './views/home'
+import HomeProyectos from "./views/homeproyectos";
+
 
 function App() {
 
@@ -17,13 +19,13 @@ function App() {
   return (
     <>
       
-      
         {isAuthenticated ? (
           <BrowserRouter>
             <NavBar/>
             <Routes>
               <Route path="/" element={<Navigate to="/home" />} />
               <Route path="/home" element={<Home/>} />
+              <Route path="/homeproyectos" element={<HomeProyectos/>} />
             </Routes>
           </BrowserRouter>
         ):

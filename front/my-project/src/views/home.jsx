@@ -1,4 +1,4 @@
-
+import {Navigate } from 'react-router-dom';
 const Home = () => {
     return (
         <div className="hero min-h-screen bg-base-200">
