@@ -7,19 +7,36 @@ function CrearPrueba() {
       <div className="flex justify-center space-x-20">
         <div className='flex'>
           <form className='w-full'>
+            {/*
             <div>
               <label className='font-sans font-medium text-xl'>ID Prueba</label>
               <input type="text" className="input input-bordered w-full max-w-xs my-2" />
             </div>
-
+            */}
             <div>
               <label className='block font-sans font-medium text-xl'>Titulo</label>
               <input type="text" className="input input-bordered w-full max-w-xs my-2" />
             </div>
 
+            <div >
+              <label className='block font-sans font-medium text-xl'>Proyecto</label>
+              <input type="text" className="input input-bordered w-full max-w-xs my-2" disabled />
+              <div className='flex justify-center'>
+                <button className="btn">Seleccionar Proyecto</button>
+              </div>  
+            </div>
+
+            <div >
+              <label className='block font-sans font-medium text-xl'>Responsable</label>
+              <input type="text" className="input input-bordered w-full max-w-xs my-2" disabled />
+              <div className='flex justify-center'>
+                <button className="btn">Seleccionar Responsable</button>
+              </div>  
+            </div>
+
             <div>
               <label className='block font-sans font-medium text-xl'>Datos</label>
-              <input type="file" className="file-input file-input-bordered w-full max-w-xs my-2" />
+              <input type="text" className="input input-bordered w-full max-w-xs my-2" />
             </div>
 
             <div>
@@ -52,7 +69,7 @@ function CrearPrueba() {
 
             <div>
               <label className='block font-sans font-medium text-xl'>Evidencia</label>
-              <input type="file" className="file-input file-input-bordered w-full max-w-xs my-2" />
+              <input type="text" className="input input-bordered w-full max-w-xs my-2" />
             </div>
 
             <div>

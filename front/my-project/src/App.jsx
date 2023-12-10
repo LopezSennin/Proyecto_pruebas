@@ -9,7 +9,9 @@ import HomeLogin from './views/homeLogin'
 import NavBar from './components/NavBar'
 import Home from './views/home'
 import HomeProyectos from "./views/homeproyectos";
-import CrearPrueba from "./components/CrudPruebas/CrearPrueba"
+import CrearPrueba from "./components/pruebas/CrearPrueba"
+import Detalles from "./components/pruebas/Detalles";
+import Editar from "./components/pruebas/Editar";
 
 
 function App() {
@@ -27,7 +29,9 @@ function App() {
               <Route path="/" element={<Navigate to="/home" />} />
               <Route path="/home" element={<Home/>} />
               <Route path="/homeproyectos" element={<HomeProyectos/>} />
-              <Route path="/CrudPruebas/CrearPrueba" element={<CrearPrueba/>} />   
+              <Route path="/CrudPruebas/CrearPrueba" element={<CrearPrueba/>} />  
+              <Route path="/CrudPruebas/Detalles" element={<Detalles/>} /> 
+              <Route path="/CrudPruebas/Editar" element={<Editar/>} /> 
             </Routes>
           </BrowserRouter>
         ):
