@@ -19,14 +19,6 @@ function Editar() {
                         </div>
 
                         <div >
-                            <label className='block font-sans font-medium text-xl'>Proyecto</label>
-                            <input type="text" className="input input-bordered w-full max-w-xs my-2" disabled/>
-                            <div className='flex justify-center'>
-                                <button className="btn">Seleccionar Proyecto</button>
-                            </div>  
-                        </div>
-
-                        <div >
                             <label className='block font-sans font-medium text-xl'>Responsable</label>
                             <input type="text" className="input input-bordered w-full max-w-xs my-2" disabled/>
                             <div className='flex justify-center'>
@@ -36,7 +28,7 @@ function Editar() {
 
                         <div>
                             <label className='block font-sans font-medium text-xl'>Datos</label>
-                            <input type="text" className="input input-bordered w-full max-w-xs my-2"/>
+                            <input type="text" className="input input-bordered w-full max-w-xs my-2" placeholder="URL"/>
                         </div>
 
                         <div>
@@ -59,6 +51,20 @@ function Editar() {
                         </div>
 
                         <div>
+                            <label className='block font-sans font-medium text-xl'>Fase</label>
+                            <select className="font-sans select select-bordered w-full max-w-xs my-2">
+                                <option>Requisitos</option>
+                                <option>Planificacion</option>
+                                <option>Analisis</option>
+                                <option>Diseño</option>
+                                <option>Implementacion</option>
+                                <option>Ejecucion</option>
+                                <option>Conclusion</option>
+                                <option>Cierre</option>
+                            </select>
+                        </div>
+
+                        <div>
                             <label className='block font-sans font-medium text-xl'>Resultado</label>
                             <select className="font-sans select select-bordered w-full max-w-xs my-2">
                                 <option selected>En proceso</option>
@@ -69,7 +75,7 @@ function Editar() {
 
                         <div>
                             <label className='block font-sans font-medium text-xl'>Evidencia</label>
-                            <input type="text" className="input input-bordered w-full max-w-xs my-2"/>
+                            <input type="text" className="input input-bordered w-full max-w-xs my-2" placeholder="URL"/>
                         </div>
 
                         <div>
