@@ -133,21 +133,22 @@ const HomeProyectos = () => {
 
     return (
         <div className="container">
-            <h1>Proyectos</h1>
-            <div className="accordion">
-            {proyectos.map((proyecto) => {
-                console.log(proyecto);
-                return(
-                <Proyecto 
-                    key={proyecto.codigo}
-                    codigo={proyecto.codigo} 
-                    nombre={proyecto.nombre}
-                    descripcion={proyecto.descripcion}
-                    fechaLimite={proyecto.fechaLimite}
-                    pruebas={proyecto.pruebas}    
-                />
-                );
-            })}
+            <p>Proyectos</p>
+            <div className="accordion flex-col object-center">
+                {proyectos.map((proyecto) => {
+                    return(
+                    
+                        <Proyecto 
+                            key={proyecto.codigo}
+                            codigo={proyecto.codigo} 
+                            nombre={proyecto.nombre}
+                            descripcion={proyecto.descripcion}
+                            fechaLimite={proyecto.fechaLimite}
+                            pruebas={proyecto.pruebas}    
+                        />
+                    
+                    );
+                })}
             </div>
         </div>
     )

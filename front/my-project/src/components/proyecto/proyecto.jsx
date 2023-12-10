@@ -12,10 +12,9 @@ const Proyecto = (props) => {
                 <p className="card-text">{props.descripcion}</p>
                 <p className="badge badge-primary">Fecha limite: {props.fechaLimite}</p>
                 <div className="card-actions">
-                    <h1>Pruebas:</h1>
+                    <h1>Pruebas: </h1>
                     <div className="accordion">
                         {props.pruebas.map((prueba) => {
-                            console.log(prueba);
                             return(
                                 <PruebaProyecto 
                                 key={prueba.id_prueba}

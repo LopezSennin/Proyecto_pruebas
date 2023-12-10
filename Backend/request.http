@@ -1,0 +1,11 @@
+###
+POST http://localhost:9000/api/proyectos HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"Software Universidad",
+    "codigo":"1",
+    "fechaInicio": "6/12/2023",
+    "fechaEntrega": "24/12/2023",
+    "tareas":"realización de pruebas"
+}
