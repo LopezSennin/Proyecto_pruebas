@@ -1,5 +1,5 @@
 import { PruebaProyecto } from "../pruebas/pruebaProyecto";
-
+import { Link } from 'react-router-dom';
 
 const Proyecto = (props) => {
 
@@ -11,9 +11,9 @@ const Proyecto = (props) => {
                 <h2 className="card-title">{props.nombre}</h2>
                 <p className="card-text">{props.descripcion}</p>
                 <p className="badge badge-primary">Fecha limite: {props.fechaLimite}</p>
-                <div className="card-actions">
+                <div className="">
                     <h1>Pruebas: </h1>
-                    <div className="accordion">
+                    <div className>
                         {props.pruebas.map((prueba) => {
                             return(
                                 <PruebaProyecto 
@@ -32,6 +32,7 @@ const Proyecto = (props) => {
                         })}
                     </div>
                 </div>
+                <Link to="/CrudPruebas/CrearPrueba" className="btn">Crear prueba</Link>
             </div>
         </div>
     )

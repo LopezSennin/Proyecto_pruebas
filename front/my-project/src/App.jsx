@@ -13,6 +13,7 @@ import CrearPrueba from "./components/pruebas/CrearPrueba"
 import Detalles from "./components/pruebas/Detalles";
 import Editar from "./components/pruebas/Editar";
 import Crearproyecto from "./components/proyecto/crearproyecto";
+import CrudUsuario from "./components/usuarios/CrudUsuario";
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
               <Route path="/CrudPruebas/Detalles" element={<Detalles/>} /> 
               <Route path="/CrudPruebas/Editar" element={<Editar/>} /> 
               <Route path="/proyecto/crearproyecto" element={<Crearproyecto/>} />
+              <Route path="*" element={<Navigate to="/home" />} /> 
+              <Route path="/crudUsuario" element={<CrudUsuario/>} />
             </Routes>
           </BrowserRouter>
         ):

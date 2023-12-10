@@ -32,11 +32,12 @@ const CrudTableRow = ({ el }) => {
       <td>{el.correo}</td>
       <td>
         {/* Botón para editar */}
-        <button className="btn" onClick={handleEdit}>
+        <button className="btn btn-outline btn-accent" onClick={handleEdit}>
           Editar
         </button>
+        
         {/* Botón para eliminar */}
-        <button className="btn" onClick={handleDelete}>
+        <button className="btn btn-outline btn-warning" onClick={handleDelete}>
           Eliminar
         </button>
       </td>

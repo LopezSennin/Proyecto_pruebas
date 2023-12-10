@@ -5,7 +5,7 @@ export const PruebaProyecto = (props) => {
     const id_proyecto = props.id_proyecto;
     const responsable = props.id_responsable /// Aqui se debe hacer una consulta a la base de datos para obtener el nombre del responsable
     return (
-        <div className="collapse bg-base-200">
+        <div className="collapse collapse-arrow bg-base-200 ">
             <input type="checkbox" /> 
             <div className="collapse-title text-xl font-medium">
                 {props.titulo}
@@ -17,7 +17,6 @@ export const PruebaProyecto = (props) => {
                 <p>Fecha de inicio: {props.fecha_inicio}</p>
                 <p>Fecha limite de entrega: {props.fecha_limete}</p>
                 <p>Resultado de la prueba: {props.resultados} </p>
-                {/*<button to="/CrudPruebas/CrearPrueba" className="btn btn-outline col-span-2">Detalle</button>*/}
                 <Link to="/CrudPruebas/Detalles"className="btn btn-outline col-span-2">Detalle</Link>
 
             </div>
