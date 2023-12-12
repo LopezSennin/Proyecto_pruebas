@@ -13,11 +13,6 @@ function CrearProyecto() {
     resultados: "",
     prueba: "", 
   };
-  export const WebsiteForm = (props) => {
-    const [website, setWebsite] = useState(initialState);
-    const params = useParams();
-    const navigate = useNavigate();
-  
 
   const handleInputChange = ({ target: { id_proyecto, value } }) =>
   setWebsite({ ...website, [id_proyecto]: value });
