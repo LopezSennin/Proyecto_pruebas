@@ -36,7 +36,7 @@ function App() {
               <Route path="/CrudPruebas/Editar" element={<Editar/>} /> 
               <Route path="/proyecto/crearproyecto" element={<Crearproyecto/>} />
               <Route path="*" element={<Navigate to="/home" />} /> 
-              <Route path="/crudUsuario" element={<CrudUsuario/>} />
+              <Route path="/usuarios" element={<CrudUsuario/>} />
             </Routes>
           </BrowserRouter>
         ):
